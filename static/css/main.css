@@ -1,0 +1,42 @@
+html,
+body {font-family:"Droid Sans", "Segoe UI", sans-serif; margin:0; padding:0;}
+body {background: url('../img/main-bg.png'); color: #aaa;font-size:14px;}
+::selection 	 {background: #6D5007;}
+::-moz-selection {background: #6D5007;}
+noscript {
+	text-align:center;padding:20px;background:#000;color:#FF2323;display:block;
+	border-top:1px solid;border-bottom:1px solid;font-size:16px;}
+h1 {
+	text-align:center;margin:0;padding:30px;font-weight:normal;font-size:36px;
+	color:#AA901D;letter-spacing:-1px;
+	background:#151515 url('../img/top-bg.png') repeat-x bottom;}
+.input {
+	text-align:center;background:#222;padding:10px 0;border-top:1px solid #444;
+	border-bottom:1px solid #000;}
+.input #input {
+	width:15em;
+	font-size:20px; font-family: "Consolas", monospace; border-radius:20px;
+	padding:3px 10px; border:2px solid #494949;background:#111;color:#eee;}
+.input #input:focus {
+	border-color: #F4B411;
+	box-shadow:0 0 10px #4F3704;}
+#output {font-family: "Consolas", monospace; overflow:hidden;}
+#output pre {
+	font-family: "Consolas", monospace;padding:0;margin:0;background:#000;
+	border-bottom:1px solid #444;}
+#output pre .inner {padding:0 10px 10px;font-size:13px;line-height:1.3;}
+#output pre.done {background:#111;color:#ccc;}
+#output h2 {
+	background:#444 url('../img/busy.gif') no-repeat 7px 5px;
+	font-size:15px; padding:6px;margin:0; font-weight:normal;
+	text-shadow:-1px -1px 0px rgba(0,0,0,0.7); color:#fff;
+	border-top:1px solid rgba(255,255,255,0.2);
+	border-bottom:1px solid rgba(0,0,0,0.8);
+	padding-left:35px;
+	position:relative;}
+#output .done h2 {background:#40603D;}
+#output h2 .closeButton {
+	display:block;position:absolute;right:7px;top:7px;
+	height:16px;width:16px;background:url('../img/close.png');}
+#output h2 .closeButton:hover {background-position:0 -16px;}
+#output pre .error {color:#8E0000;background:#000;padding:5px;}
